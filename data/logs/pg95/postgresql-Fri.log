@@ -1,0 +1,41 @@
+2017-02-10 10:33:46 CET [8132]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2017-02-10 10:33:33 CET
+2017-02-10 10:33:46 CET [8132]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2017-02-10 10:33:47 CET [1160]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2017-02-10 10:33:47 CET [6816]: [3-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2017-02-10 10:38:47 CET [5880]: [1-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 10:38:47 CET [5880]: [2-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.107 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2017-02-10 10:43:47 CET [5880]: [3-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 10:43:47 CET [5880]: [4-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.000 s, total=0.602 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2017-02-10 10:48:47 CET [5880]: [5-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 10:48:47 CET [5880]: [6-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.008 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2017-02-10 10:53:47 CET [5880]: [7-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 10:53:47 CET [5880]: [8-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2017-02-10 10:56:33 CET [9200]: [1-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 ERROR:  syntax error at or near "extensions" at character 8
+2017-02-10 10:56:33 CET [9200]: [2-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 STATEMENT:  create extensions orafce;
+2017-02-10 10:57:49 CET [6916]: [1-1] user=,db=,app=,client= LOG:  automatic analyze of table "postgres.pg_catalog.pg_proc" system usage: CPU 0.00s/0.03u sec elapsed 0.22 sec
+2017-02-10 10:57:49 CET [6916]: [2-1] user=,db=,app=,client= LOG:  automatic analyze of table "postgres.pg_catalog.pg_depend" system usage: CPU 0.00s/0.01u sec elapsed 0.07 sec
+2017-02-10 10:58:47 CET [5880]: [9-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 10:59:07 CET [5880]: [10-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 192 buffers (1.2%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=19.235 s, sync=0.047 s, total=19.303 s; sync files=60, longest=0.007 s, average=0.000 s; distance=1190 kB, estimate=1190 kB
+2017-02-10 11:00:28 CET [9200]: [3-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 ERROR:  UTL_FILE_INVALID_PATH
+2017-02-10 11:00:28 CET [9200]: [4-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 DETAIL:  you cannot access locality
+2017-02-10 11:00:28 CET [9200]: [5-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 HINT:  locality is not found in utl_file_dir table
+2017-02-10 11:00:28 CET [9200]: [6-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 CONTEXT:  PL/pgSQL function gen_file(text,text,text,text) line 7 at assignment
+2017-02-10 11:00:28 CET [9200]: [7-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 STATEMENT:  
+	SELECT gen_file('c:/symfo', 'input.txt', 'output.txt', 'copyfile.txt');
+2017-02-10 11:01:43 CET [9200]: [8-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 ERROR:  syntax error at or near ":" at character 44
+2017-02-10 11:01:43 CET [9200]: [9-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 STATEMENT:  insert INTO utl_file.utl_file_dir VALUES (c:/symfo);
+2017-02-10 11:02:06 CET [9200]: [10-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 ERROR:  no data found
+2017-02-10 11:02:06 CET [9200]: [11-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 CONTEXT:  PL/pgSQL function gen_file(text,text,text,text) line 11 at assignment
+2017-02-10 11:02:06 CET [9200]: [12-1] user=postgres,db=postgres,app=pgAdmin3 LTS by BigSQL - ??diteur de requ??tes,client=::1 STATEMENT:  SELECT gen_file('c:/symfo', 'input.txt', 'output.txt', 'copyfile.txt');
+2017-02-10 11:03:47 CET [5880]: [11-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:03:47 CET [5880]: [12-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.301 s, sync=0.002 s, total=0.312 s; sync files=4, longest=0.001 s, average=0.000 s; distance=2 kB, estimate=1071 kB
+2017-02-10 11:08:47 CET [5880]: [13-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:08:47 CET [5880]: [14-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.000 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=964 kB
+2017-02-10 11:13:47 CET [5880]: [15-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:13:47 CET [5880]: [16-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=868 kB
+2017-02-10 11:18:47 CET [5880]: [17-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:18:47 CET [5880]: [18-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.016 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=781 kB
+2017-02-10 11:23:47 CET [5880]: [19-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:23:47 CET [5880]: [20-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=703 kB
+2017-02-10 11:28:47 CET [5880]: [21-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2017-02-10 11:28:47 CET [5880]: [22-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.057 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=632 kB

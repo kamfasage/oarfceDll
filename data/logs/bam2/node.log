@@ -1,0 +1,22 @@
+2017-02-10T10:41:36+0100 [Controller   5328] [33m[1m     __  __  __  __  __  __      __     __[0m
+2017-02-10T10:41:36+0100 [Controller   5328] [33m[1m    /  `|__)/  \/__`/__`|__) /\ |__)  |/  \[0m
+2017-02-10T10:41:36+0100 [Controller   5328] [33m[1m    \__,|  \\__/.__/.__/|__)/~~\|  \. |\__/[0m
+2017-02-10T10:41:36+0100 [Controller   5328] [33m[1m                                        [0m
+2017-02-10T10:41:36+0100 [Controller   5328]     Version: [33m[1m0.11.2[0m     
+2017-02-10T10:41:36+0100 [Controller   5328] 
+2017-02-10T10:41:36+0100 [Controller   5328] Starting from node directory C:\PROGRA~1\POSTGR~1\bam2\bin
+2017-02-10T10:41:41+0100 [Controller   5328] Loading node configuration file 'C:\PROGRA~1\POSTGR~1\bam2\bin\config.json'
+2017-02-10T10:41:41+0100 [Controller   5328] Entering reactor event loop...
+2017-02-10T10:41:41+0100 [Controller   5328] Joined realm 'crossbar' on node management router
+2017-02-10T10:41:41+0100 [Controller   5328] No WAMPlets detected in enviroment.
+2017-02-10T10:41:41+0100 [Controller   5328] Starting Router with ID 'worker1'...
+2017-02-10T10:41:42+0100 [Router       5920] Worker running under CPython-IOCPReactor
+2017-02-10T10:41:44+0100 [Controller   5328] Router with ID 'worker1' and PID 5920 started
+2017-02-10T10:41:44+0100 [Controller   5328] Router 'worker1': realm 'realm1' (named 'realm1') started
+2017-02-10T10:41:44+0100 [Controller   5328] Router 'worker1': role 'role1' (named 'anonymous') started on realm 'realm1'
+2017-02-10T10:41:44+0100 [Controller   5328] Router 'worker1': transport 'transport1' started
+2017-02-10T10:41:44+0100 [Controller   5328] Starting Container with ID 'worker2'...
+2017-02-10T10:41:44+0100 [Router       5920] Site starting on 8050
+2017-02-10T10:41:45+0100 [Container    7972] Worker running under CPython-IOCPReactor
+2017-02-10T10:41:46+0100 [Controller   5328] Container with ID 'worker2' and PID 7972 started
+2017-02-10T10:41:47+0100 [Controller   5328] Container 'worker2': component 'component1' started

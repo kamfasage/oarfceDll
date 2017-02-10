@@ -1,0 +1,8 @@
+[2017-02-10 10:34:01] [info]  [ 7620] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2017-02-10 10:34:01] [info]  [ 7620] Service bigsql.bam2 name BigSQL Manager
+[2017-02-10 10:34:01] [info]  [ 7620] Service 'bigsql.bam2' installed
+[2017-02-10 10:34:01] [info]  [ 7620] Commons Daemon procrun finished
+[2017-02-10 10:41:33] [info]  [ 2304] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2017-02-10 10:41:33] [info]  [ 2304] Running 'bigsql.bam2' Service...
+[2017-02-10 10:41:33] [info]  [ 2768] Starting service...
+[2017-02-10 10:41:33] [info]  [ 2768] Service started in 13 ms.

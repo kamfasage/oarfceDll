@@ -1,0 +1,53 @@
+2017-02-10 10:33:21 [COMMAND] : pgc set GLOBAL REPO https://s3.amazonaws.com/pgcentral 
+2017-02-10 10:33:22 [COMMAND] : pgc init pg95 --datadir C:\Program Files\PostgreSQL\data\pg95 --options --encoding UTF8  
+ 
+## Initializing pg95 #######################
+Giving current user permission to data dir
+Giving current user permission to log dir
+ 
+Initializing Postgres DB at:
+   -D "C:\Program Files\PostgreSQL\data\pg95" --encoding UTF8 
+ 
+Using PostgreSQL Port 5433
+ 
+Password securely remembered in the file: C:\Users\kamfasage\AppData\Roaming\postgresql\pgpass.conf
+ 
+to load this postgres into your environment, run the env file: 
+    C:\PROGRA~1\POSTGR~1\pg95\pg95-env.bat
+ 
+2017-02-10 10:33:39 [COMMAND] : pgc config pg95 --port 5433 --svcname PostgreSQL 9.5 Server 
+2017-02-10 10:33:42 [COMMAND] : pgc config pg95 --autostart on 
+2017-02-10 10:33:48 [COMMAND] : pgc install bam2 1.6.3 
+2017-02-10 10:33:48 [INFO] :   ['bam2']
+2017-02-10 10:33:48 [INFO] : File is already downloaded.
+2017-02-10 10:33:48 [INFO] :  Unpacking bam2-1.6.3.tar.bz2
+2017-02-10 10:34:01 [INFO] : bam2 Enabled
+2017-02-10 10:34:16 [COMMAND] : pgc install pgadmin3 
+2017-02-10 10:34:16 [INFO] :   ['pgadmin3']
+2017-02-10 10:34:16 [INFO] : Get:1 https://s3.amazonaws.com/pgcentral pgadmin3-1.23.0a-win64
+2017-02-10 10:34:18 [INFO] : Downloading file pgadmin3-1.23.0a-win64 
+2017-02-10 10:34:37 [INFO] : Downloading checksum for pgadmin3-1.23.0a-win64 
+2017-02-10 10:34:37 [INFO] :  Unpacking pgadmin3-1.23.0a-win64.tar.bz2
+2017-02-10 10:34:42 [INFO] : pgadmin3 Enabled
+2017-02-10 10:41:30 [COMMAND] : pgc start bam2 
+
+SERVICE_NAME: bigsql.bam2 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 2  START_PENDING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 6792
+        FLAGS              : 
+
+bam2 starting on port 8050
+bam2 started on port 8050.
+2017-02-10 10:42:59 [COMMAND] : pgc install orafce3-pg95 
+2017-02-10 10:42:59 [INFO] :   ['orafce3-pg95']
+2017-02-10 10:42:59 [INFO] : Get:1 https://s3.amazonaws.com/pgcentral orafce3-pg95-3.3.1-1-win64
+2017-02-10 10:43:04 [INFO] : Downloading file orafce3-pg95-3.3.1-1-win64 
+2017-02-10 10:43:07 [INFO] : Downloading checksum for orafce3-pg95-3.3.1-1-win64 
+2017-02-10 10:43:07 [INFO] :  Unpacking orafce3-pg95-3.3.1-1-win64.tar.bz2
+2017-02-10 10:43:10 [INFO] : orafce3-pg95 Enabled

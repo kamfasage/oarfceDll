@@ -1,0 +1,35 @@
+Les fichiers de ce cluster appartiendront à l'utilisateur « kamfasage ».
+Le processus serveur doit également lui appartenir.
+
+L'instance sera initialisée avec la locale « French_France.1252 ».
+La configuration de la recherche plein texte a été initialisée à « french ».
+
+Les sommes de contrôles des pages de données sont désactivées.
+
+correction des droits sur le répertoire existant C:/Program Files/PostgreSQL/data/pg95... ok
+création des sous-répertoires... ok
+sélection de la valeur par défaut de max_connections... 100
+sélection de la valeur par défaut pour shared_buffers... 128MB
+sélection de l'implémentation de la mémoire partagée dynamique...windows
+création des fichiers de configuration... ok
+création de la base de données template1 dans C:/Program Files/PostgreSQL/data/pg95/base/1... ok
+initialisation de pg_authid... ok
+initialisation du mot de passe... ok
+initialisation des dépendances... ok
+création des vues système... ok
+chargement de la description des objets système... ok
+création des collationnements... non supporté sur cette plateforme
+création des conversions... ok
+création des dictionnaires... ok
+initialisation des droits sur les objets internes... ok
+création du schéma d'informations... ok
+chargement du langage PL/pgSQL... ok
+lancement du vacuum sur la base de données template1... ok
+copie de template1 vers template0... ok
+copie de template1 vers postgres... ok
+synchronisation des données sur disqueok
+
+Succès. Vous pouvez maintenant lancer le serveur de bases de données en utilisant :
+
+    "C:\PROGRA~1\POSTGR~1\pg95\bin\pg_ctl" -D "C:\Program Files\PostgreSQL\data\pg95" -l journal_applicatif start
+

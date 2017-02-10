@@ -1,0 +1,24 @@
+{
+   "pid": 5328, 
+   "options": {
+      "reactor": null, 
+      "loglevel": "info", 
+      "logtofile": true, 
+      "logformat": "colour", 
+      "command": "start", 
+      "logdir": "C:\\PROGRA~1\\POSTGR~1\\data\\logs\\bam2", 
+      "config": "C:\\PROGRA~1\\POSTGR~1\\bam2\\bin\\config.json", 
+      "cbdir": "C:\\PROGRA~1\\POSTGR~1\\bam2\\bin"
+   }, 
+   "argv": [
+      "C:\\PROGRA~1\\POSTGR~1\\bam2\\bin\\start_crossbar.py", 
+      "start", 
+      "--cbdir", 
+      "C:\\PROGRA~1\\POSTGR~1\\bam2\\bin\\.", 
+      "--loglevel", 
+      "info", 
+      "--logtofile", 
+      "--logdir", 
+      "C:\\PROGRA~1\\POSTGR~1\\bam2\\bin\\..\\..\\data\\logs\\bam2"
+   ]
+}

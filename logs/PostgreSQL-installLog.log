@@ -1,0 +1,257 @@
+Log started 02/10/2017 at 10:30:55
+Preferred installation mode : win32
+Trying to init installer in mode win32
+Mode win32 successfully initialized
+[10:30:58] Initializing PostgreSQL installer
+[10:30:58] Windows Version is: Windows 7 (6.1)
+[10:30:58] Operating System Language is: fr
+[10:30:59] Current build_identifier is: 9.5.5-1
+[10:30:59] System PATH:
+C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\apps\Git\cmd;C:\apps\Git\bin;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Users\kamfasage\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Novosoft\C2J\Bin;
+[10:30:59] Initializing pg95 variables
+[10:30:59] Download url: https://s3.amazonaws.com/pgcentral
+[10:30:59] PostgreSQL Locale to install: DEFAULT
+Setting variable windows_net_session_exitcode from C:\Users\kamfasage\AppData\Local\Temp\postgresql_kamfasage/net-session-exit-code.bat 
+Script exit code: 0
+
+Script output:
+ 0
+
+Script stderr:
+ 
+
+[10:31:00] Exit code of "net session" is: 0.
+[10:31:00] Executing pg95 Pre-install actions
+[10:31:04] Validating installdir: C:\Program Files\PostgreSQL
+[10:31:04] Setting pg dir: C:\Program Files\PostgreSQL\pg95
+Setting variable check_pgc-path from C:\Users\kamfasage\AppData\Local\Temp\postgresql_kamfasage/check-path.bat "C:\Program Files\PostgreSQL"
+Script exit code: 0
+
+Script output:
+ OK
+
+Script stderr:
+ 
+
+[10:31:10] Testing selected data dir: C:\Program Files\PostgreSQL\data\pg95
+[10:31:18] Using pg free port = 5433
+[10:31:24] Network connection required for component download
+Preparing to Install
+Windows security permissions
+[10:31:25] Granting permissions to directories
+Granting permission to NetworkService for C:\Program Files\PostgreSQL
+Granting permission to Everyone on Logs
+Check download connection
+Preparing to Install
+[10:31:25] Executing postgresql ready to install actions
+Check for existing Windows service
+Check for existing installation: C:\Program Files\PostgreSQL
+[10:31:25] Checking for PostgreSQL installation in existing directory C:\Program Files\PostgreSQL
+Checking for existing bam2 service
+[10:31:25] Checking for uninstall of existing service bigsql.bam2
+[10:31:25] Executing pgadmin ready to install actions
+Unpacking files
+Unpacking files
+Unpacking files
+[10:33:17] Executing pg95 Post-install actions
+PGC info
+Run PGC info so that pgc install information is saved to installer log file
+Executing C:\Program Files\PostgreSQL/pgc info
+Script exit code: 0
+
+Script output:
+ ###########################################################################
+#             PGC: v3.0.1  C:\PROGRA~1\POSTGR~1
+#     User & Host: kamfasage (Admin)  \\KAMFASAGE-HP\KAMFASAGE-HP
+#   Platform & Os: win  Microsoft Windowsˇ7 êdition Familiale Premium, SP 1
+#        Hardware: 5.8 GB, 4 x Intel Core i5       M 460  @ 2.53GHz
+#        Repo URL: http://s3.amazonaws.com/pgcentral
+# Last Update UTC: None
+###########################################################################
+
+Script stderr:
+ 
+
+Set global repo
+Set download (repo) url: https://s3.amazonaws.com/pgcentral
+Executing C:\Program Files\PostgreSQL/pgc set GLOBAL REPO https://s3.amazonaws.com/pgcentral
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Create cluster (initdb) or configure existing datadir
+Setting up database
+[10:33:22] Creating new database for pg95 in data dir C:\Program Files\PostgreSQL\data\pg95
+Determine locale
+Windows
+Creating initial database and postgres user
+Executing C:\Program Files\PostgreSQL/pgc init pg95 --datadir "C:\Program Files\PostgreSQL\data\pg95" --options "--encoding UTF8 "
+Script exit code: 0
+
+Script output:
+  
+## Initializing pg95 #######################
+Giving current user permission to data dir
+fichier traitÇˇ: C:\Program Files\PostgreSQL\data\pg95
+1 fichiers correctement traitÇsˇ; Çchec du traitement de 0 fichiers
+Giving current user permission to log dir
+fichier traitÇˇ: C:\PROGRA~1\POSTGR~1\data\logs\pg95
+1 fichiers correctement traitÇsˇ; Çchec du traitement de 0 fichiers
+ 
+Initializing Postgres DB at:
+   -D "C:\Program Files\PostgreSQL\data\pg95" --encoding UTF8 
+ 
+Using PostgreSQL Port 5433
+ 
+Password securely remembered in the file: C:\Users\kamfasage\AppData\Roaming\postgresql\pgpass.conf
+ 
+to load this postgres into your environment, run the env file: 
+    C:\PROGRA~1\POSTGR~1\pg95\pg95-env.bat
+ 
+
+Script stderr:
+ 
+
+Adding C:\Program Files\PostgreSQL\pg95\bin to System Path
+Broadcasting environment changes
+Configure through pgc
+Setting PostgreSQL port = 5433
+Executing C:\Program Files\PostgreSQL/pgc config pg95 --port 5433 --svcname "PostgreSQL 9.5 Server"
+Script exit code: 0
+
+Script output:
+  
+Using PostgreSQL Port 5433
+
+Script stderr:
+ 
+
+Windows Specific Configuraton
+[10:33:41] Windows Actions (services)
+Configuring PostgreSQL as auto start
+Executing C:\Program Files\PostgreSQL\pgc config pg95 --autostart on
+Script exit code: 0
+
+Script output:
+ Creating PostgreSQL pg95 service
+pg95 has been configured to auto start on
+
+Script stderr:
+ 
+
+Starting service "PostgreSQL 9.5 Server"
+Executing sc start "PostgreSQL 9.5 Server"
+Script exit code: 0
+
+Script output:
+ 
+SERVICE_NAME: PostgreSQL 9.5 Server 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 2  START_PENDING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 6692
+        FLAGS              : 
+
+Script stderr:
+ 
+
+Configuring Windows firewall settings - postgres
+Executing netsh.exe advfirewall firewall add rule name="Allow PostgreSQL Server" action=allow dir=in program="C:\Program Files\PostgreSQL\pg95\bin\postgres.exe"
+Script exit code: 0
+
+Script output:
+ Ok.
+
+
+Script stderr:
+ 
+
+Configuring Windows firewall settings - python
+Executing netsh.exe advfirewall firewall add rule name="Allow PostgreSQL Python" action=allow dir=in program="C:\Program Files\PostgreSQL\python2\python.exe"
+Script exit code: 0
+
+Script output:
+ Ok.
+
+
+Script stderr:
+ 
+
+Configuring BigSQL Manager II
+Executing C:\Program Files\PostgreSQL/pgc install bam2 1.6.3
+Script exit code: 0
+
+Script output:
+   ['bam2']
+File is already downloaded.
+ Unpacking bam2-1.6.3.tar.bz2
+
+Script stderr:
+ 
+
+Windows specific configuration
+[10:34:13] Running pgAdmin post installation actions
+Installing pgAdmin3 ...
+Executing C:\Program Files\PostgreSQL/pgc install pgadmin3
+Script exit code: 0
+
+Script output:
+   ['pgadmin3']
+Get:1 https://s3.amazonaws.com/pgcentral pgadmin3-1.23.0a-win64
+176.0 KB [1%] 352.0 KB [2%] 528.0 KB [3%] 704.0 KB [4%] 880.0 KB [5%] 1024.0 KB [5%] 1.0 MB [6%] 1.2 MB [7%] 1.4 MB [8%] 1.5 MB [9%] 1.7 MB [10%] 1.9 MB [11%] 2.0 MB [11%] 2.1 MB [12%] 2.2 MB [13%] 2.4 MB [14%] 2.6 MB [15%] 2.7 MB [16%] 2.9 MB [17%] 3.0 MB [17%] 3.1 MB [18%] 3.3 MB [19%] 3.4 MB [20%] 3.6 MB [21%] 3.8 MB [22%] 3.9 MB [23%] 4.0 MB [23%] 4.1 MB [24%] 4.3 MB [25%] 4.5 MB [26%] 4.6 MB [27%] 4.8 MB [28%] 5.0 MB [29%] 5.0 MB [29%] 5.1 MB [30%] 5.3 MB [31%] 5.5 MB [32%] 5.7 MB [33%] 5.8 MB [34%] 6.0 MB [35%] 6.2 MB [36%] 6.3 MB [37%] 6.5 MB [38%] 6.7 MB [39%] 6.9 MB [40%] 7.0 MB [40%] 7.0 MB [41%] 7.2 MB [42%] 7.4 MB [43%] 7.5 MB [44%] 7.7 MB [45%] 7.9 MB [46%] 8.0 MB [46%] 8.1 MB [47%] 8.2 MB [48%] 8.4 MB [49%] 8.6 MB [50%] 8.7 MB [51%] 8.9 MB [52%] 9.0 MB [52%] 9.1 MB [53%] 9.2 MB [54%] 9.4 MB [55%] 9.6 MB [56%] 9.8 MB [57%] 9.9 MB [58%] 10.0 MB [58%] 10.1 MB [59%] 10.3 MB [60%] 10.4 MB [61%] 10.6 MB [62%] 10.8 MB [63%] 11.0 MB [64%] 11.0 MB [64%] 11.1 MB [65%] 11.3 MB [66%] 11.5 MB [67%] 11.6 MB [68%] 11.8 MB [69%] 12.0 MB [70%] 12.0 MB [70%] 12.2 MB [71%] 12.3 MB [72%] 12.5 MB [73%] 12.7 MB [74%] 12.8 MB [75%] 13.0 MB [75%] 13.0 MB [76%] 13.2 MB [77%] 13.4 MB [78%] 13.5 MB [79%] 13.7 MB [80%] 13.9 MB [81%] 14.0 MB [81%] 14.0 MB [82%] 14.2 MB [83%] 14.4 MB [84%] 14.6 MB [85%] 14.7 MB [86%] 14.9 MB [87%] 15.0 MB [87%] 15.1 MB [88%] 15.2 MB [89%] 15.4 MB [90%] 15.6 MB [91%] 15.8 MB [92%] 15.9 MB [93%] 16.0 MB [93%] 16.1 MB [94%] 16.3 MB [95%] 16.4 MB [96%] 16.6 MB [97%] 16.8 MB [98%] 17.0 MB [99%] 17.0 MB [99%] 17.1 MB [100%]  Unpacking pgadmin3-1.23.0a-win64.tar.bz2
+
+Script stderr:
+ 
+
+Verify pgAdmin Shortcut
+Cleanup
+Deleting temp dir: C:\Users\kamfasage\AppData\Local\Temp\postgresql_kamfasage
+Creating Uninstaller
+Creating uninstaller 25%
+Creating uninstaller 50%
+Creating uninstaller 75%
+Creating uninstaller 100%
+Uninstaller icon changed
+Installation completed
+Signed uninstaller
+Log finished 02/10/2017 at 10:36:26
+Executing C:\Program Files\PostgreSQL/pgc start bam2
+Script exit code: 0
+
+Script output:
+ 
+SERVICE_NAME: bigsql.bam2 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 2  START_PENDING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 6792
+        FLAGS              : 
+
+bam2 starting on port 8050
+bam2 started on port 8050.
+
+Script stderr:
+ 
+
+Executing C:\Program Files\PostgreSQL/bam2/bin/open-bam2.bat 
+Script exit code: 0
+
+Script output:
+         STATE              : 4  RUNNING 
+        STATE              : 4  RUNNING 
+
+Script stderr:
+ 
+

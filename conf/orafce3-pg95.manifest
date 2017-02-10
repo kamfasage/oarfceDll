@@ -1,0 +1,13 @@
+{
+    "component": "orafce3-pg95", 
+    "files": [
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\lib\\postgresql\\orafce.dll", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\doc\\postgresql\\extension\\COPYRIGHT.orafce", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\doc\\postgresql\\extension\\INSTALL.orafce", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\doc\\postgresql\\extension\\README.asciidoc", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\postgresql\\extension\\orafce--3.2--3.3.sql", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\postgresql\\extension\\orafce--3.3.sql", 
+        "C:\\PROGRA~1\\POSTGR~1\\pg95\\share\\postgresql\\extension\\orafce.control"
+    ], 
+    "parent": "pg95"
+}
